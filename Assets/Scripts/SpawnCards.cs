@@ -8,6 +8,7 @@ public class SpawnCards : MonoBehaviour {
     public InventoryManager SourceInventory;
     public InventoryManager DestinationInventory;
     public CardType[] cardTypes;
+    
     private PlaySpots spots;
 	// Use this for initialization
 	void Start () {
@@ -17,6 +18,7 @@ public class SpawnCards : MonoBehaviour {
             SpawnCard(i);
             
         }
+        
 	}
 	
 	// Update is called once per frame

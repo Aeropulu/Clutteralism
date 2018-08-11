@@ -7,12 +7,19 @@ public class InventoryManager : MonoBehaviour {
     private List<InventoryElement> list;
     private RectTransform inventory;
     public RectTransform elementprefab;
+
+    public ResourceType[] StartResources;
     
 	// Use this for initialization
 	void Start () {
         list = new List<InventoryElement>(40);
         inventory = GetComponent<RectTransform>();
-	}
+        for (int i = 0; i < StartResources.Length; i++)
+        {
+            AddItem(StartResources[i]);
+            
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
