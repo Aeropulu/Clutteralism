@@ -2,15 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public abstract class InputScheme : ScriptableObject {
-    public bool left, right, confirm, cancel, discard;
-    public abstract void ProcessInputs();
-	
-}
-
-[CreateAssetMenu(menuName ="Keyboard Input Scheme")]
-public class KeyboardScheme : InputScheme
+[CreateAssetMenu(menuName = "Keyboard Input Scheme")]
+public class KeyboardInputScheme : InputScheme
 {
     public KeyCode LeftKey;
     public KeyCode RightKey;
