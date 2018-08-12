@@ -670,6 +670,11 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: 3016aad03d608ab4586b277cd9dc07fc,
         type: 2}
+    - target: {fileID: 224778264639069036, guid: 040fd5da2ce997847b3052c6937e0b6c,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 040fd5da2ce997847b3052c6937e0b6c, type: 2}
   m_IsPrefabAsset: 0
@@ -840,6 +845,11 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: 3016aad03d608ab4586b277cd9dc07fc,
         type: 2}
+    - target: {fileID: 224778264639069036, guid: 040fd5da2ce997847b3052c6937e0b6c,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 040fd5da2ce997847b3052c6937e0b6c, type: 2}
   m_IsPrefabAsset: 0
@@ -916,7 +926,7 @@ Canvas:
   m_GameObject: {fileID: 1366660661}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1020,6 +1030,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1814677704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1739957374912890, guid: 040fd5da2ce997847b3052c6937e0b6c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1197289792}
+--- !u!223 &1814677705
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1814677704}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: -444254965
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!224 &1820593405 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224010526796864636, guid: 040fd5da2ce997847b3052c6937e0b6c,
@@ -1149,3 +1184,28 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224767938796798446, guid: 040fd5da2ce997847b3052c6937e0b6c,
     type: 2}
   m_PrefabInternal: {fileID: 1197289792}
+--- !u!1 &2119211526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1739957374912890, guid: 040fd5da2ce997847b3052c6937e0b6c,
+    type: 2}
+  m_PrefabInternal: {fileID: 717467396}
+--- !u!223 &2119211527
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2119211526}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 1
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: -444254965
+  m_SortingOrder: 0
+  m_TargetDisplay: 0

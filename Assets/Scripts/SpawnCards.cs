@@ -40,7 +40,8 @@ public class SpawnCards : MonoBehaviour {
         timer.type = type;
         timer.output = new List<ResourceType>(type.output);
         timer.input = new List<ResourceType>(type.input);
-        //timer.duration = type.duration;
+        if (timer.input.Count == 0)
+            timer.delay = 0.0f;
 
         c.SetParent(t, false);
         spots.cardspots[i] = c;

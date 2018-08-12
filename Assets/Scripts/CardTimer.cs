@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.Audio;
 
 public class CardTimer : MonoBehaviour {
     public bool isActive = false;
@@ -15,11 +17,16 @@ public class CardTimer : MonoBehaviour {
     public List<ResourceType> input;
     public List<ResourceType> output;
     public CardType type;
+    public float delay = 0.25f;
+    private float wait = 0.0f;
+    private bool willProduce = false;
+
+    public AudioSource audioSource;
 	// Use this for initialization
 	void Start () {
         
-        
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -39,19 +46,29 @@ public class CardTimer : MonoBehaviour {
                 isAvailable = true;
             
         }
-            
+        
         timerclip.SampleAnimation(mask, timerstate);
+
+        if (willProduce)
+        {
+            if (wait <= 0.0f)
+            {
+                foreach (ResourceType t in output)
+                    DestinationInventory.AddItem(t, transform.position);
+                willProduce = false;
+                audioSource.Play();
+            }
+            wait -= Time.deltaTime;
+        }
+
 	}
 
-    private void OnDisable()
+    public void Activate()
     {
-        //timerstate = 1.0f;
-        //timerclip.SampleAnimation(mask, timerstate);
-    }
-    private void OnEnable()
-    {
-        //timerstate = 0.0f;
-        //timerclip.SampleAnimation(mask, timerstate);
+        isActive = true;
+        isAvailable = false;
+        duration = type.duration;
+        timerstate = 0.0f;
     }
 
     private void Process()
@@ -68,9 +85,11 @@ public class CardTimer : MonoBehaviour {
         if (allInputsPresent)
         {
             foreach (ResourceType t in input)
-                SourceInventory.RemoveItem(t);
-            foreach (ResourceType t in output)
-                DestinationInventory.AddItem(t);
+                SourceInventory.RemoveItem(t, transform.position);
+            /*foreach (ResourceType t in output)
+                DestinationInventory.AddItem(t, transform.position);*/
+            willProduce = true;
+            wait = delay;
 
         }
 

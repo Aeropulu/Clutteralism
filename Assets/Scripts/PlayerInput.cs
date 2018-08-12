@@ -97,9 +97,10 @@ public class PlayerInput : MonoBehaviour {
         spots.cardspots[selectedcard] = (RectTransform) card.parent;
         card.SetParent(current[whatcard], false);
         current[whatcard] = card;
-        timer.isActive = true;
+        timer.Activate();
+        /*timer.isActive = true;
         timer.isAvailable = false;
-        timer.duration = timer.type.duration;
+        timer.duration = timer.type.duration;*/
         spawn.SpawnCard(selectedcard);
         current = spots.cardspots;
         MoveCursor();
