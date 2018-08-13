@@ -18,5 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1b5d8e5bdfd38cb4ab4e98ed26007a22, type: 2}
   - {fileID: 11400000, guid: dfb49fbf07818be4b90aedb9b3600b03, type: 2}
   duration: 5
-  sprite: {fileID: 21300000, guid: d9cdb633ab5797c4da95b4f2899f9349, type: 3}
+  sprite: {fileID: 21300000, guid: 7fa0f81af1ef020479edd929a3012db4, type: 3}
   color: {r: 0.46174258, g: 0.8679245, b: 0.41349235, a: 1}

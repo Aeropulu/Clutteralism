@@ -12,6 +12,7 @@ public class PlayerInput : MonoBehaviour {
     private PlaySpots spots = null;
     private SpawnCards spawn = null;
     public SpawnCards Opponent;
+    
     public InputScheme inputScheme;
    
 
@@ -21,7 +22,7 @@ public class PlayerInput : MonoBehaviour {
         spawn = GetComponent<SpawnCards>();
         current = spots.cardspots;
         MoveCursor();
-        
+        GameState.GameSpeed = 1.0f;
 	}
 	
 	// Update is called once per frame
@@ -94,7 +95,16 @@ public class PlayerInput : MonoBehaviour {
         if (current[whatcard].GetComponent<CardTimer>() == null)
             return;
         if (!timer.isAvailable)
+        {
+            
+            timer.GetComponent<Animator>().Play("CardNope", -1, 0.0f);
+
             return;
+        }
+            
+
+        timer.GetComponent<Animator>().Play("CardSelect");
+
         selectedcard = whatcard;
         current = spots.factoryspots;
         MoveCursor();
@@ -121,11 +131,14 @@ public class PlayerInput : MonoBehaviour {
         card.SetParent(current[whatcard], false);
         current[whatcard] = card;
         timer.Activate();
+        timer.GetComponent<Animator>().Play("CardPlay");
         /*timer.isActive = true;
         timer.isAvailable = false;
         timer.duration = timer.type.duration;*/
         spawn.SpawnCard(selectedcard);
         current = spots.cardspots;
         MoveCursor();
+
+        GameState.GameSpeed += 0.05f;
     }
 }

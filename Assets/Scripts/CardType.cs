@@ -10,7 +10,7 @@ public class CardType : ScriptableObject {
     public CardType[] Draw;
 
     public float duration = 1.0f;
-    //public Sprite sprite;
+    public Sprite sprite;
     public Color color = Color.white;
 	
 }

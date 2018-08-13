@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,7 +10,11 @@ public class InventoryManager : MonoBehaviour {
     public RectTransform elementprefab;
 
     public ResourceType[] StartResources;
-    
+    public int max = 70;
+
+    public Animator ClutteredText;
+    public Animator WinText;
+    public InventoryManager Opponent;
 	// Use this for initialization
 	void Start () {
         
@@ -17,7 +22,7 @@ public class InventoryManager : MonoBehaviour {
 
     public void Init()
     {
-        list = new List<InventoryElement>(40);
+        list = new List<InventoryElement>(max);
         inventory = GetComponent<RectTransform>();
         for (int i = 0; i < StartResources.Length; i++)
         {
@@ -28,6 +33,12 @@ public class InventoryManager : MonoBehaviour {
 
     public void AddItem(ResourceType t, Vector3 from)
     {
+        if (list.Count >= max)
+        {
+            GameOver();
+            return;
+        }
+
         RectTransform r = Instantiate(elementprefab, inventory);
         UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(inventory);
         r.GetComponent<UnityEngine.UI.Image>().sprite = t.sprite;
@@ -44,6 +55,19 @@ public class InventoryManager : MonoBehaviour {
 
         //list.Add(new InventoryElement(t, r));
         
+    }
+
+    private void GameOver()
+    {
+        GameState.GameSpeed = 0.0f;
+        ClutteredText.transform.SetAsLastSibling();
+        ClutteredText.Play("Cluttered");
+        Opponent.Win();
+    }
+
+    private void Win()
+    {
+        WinText.Play("GG");
     }
 
     public bool RemoveItem(ResourceType t, Vector3 to)

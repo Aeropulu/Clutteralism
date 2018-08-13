@@ -27,7 +27,8 @@ public class CardTimer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         GetComponent<UnityEngine.UI.Image>().color = type.color;
-        // image.sprite = type.sprite;
+        if (type.sprite)
+            image.sprite = type.sprite;
 
     }
 	
@@ -35,7 +36,7 @@ public class CardTimer : MonoBehaviour {
 	void Update () {
         if (isAvailable)
             return;
-        timerstate += Time.deltaTime / duration;
+        timerstate += Time.deltaTime / duration * GameState.GameSpeed;
         if (timerstate > 1.0f)
         {
             if (isActive)

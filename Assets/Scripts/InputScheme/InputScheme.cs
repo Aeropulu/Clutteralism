@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 public abstract class InputScheme : ScriptableObject {
-    public bool left, right, confirm, cancel, discard;
+    public bool up, down, left, right, confirm, cancel, discard;
     public abstract void ProcessInputs();
 	
 }
