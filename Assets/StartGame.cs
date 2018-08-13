@@ -11,6 +11,10 @@ public class StartGame : MonoBehaviour {
     public PlayerInput LeftInput, Rightinput;
     public InputSchemeSelector LeftSelector, RightSelector;
     public GameObject MainMenu;
+    public MenuInputManager menuInput;
+
+    public AudioSource StartGameSound;
+    public GameObject GameMusic;
 
 	// Use this for initialization
 	void Start () {
@@ -27,7 +31,10 @@ public class StartGame : MonoBehaviour {
             LeftInput.gameObject.SetActive(true);
             Rightinput.gameObject.SetActive(true);
             GameState.GameSpeed = 1.0f;
+            StartGameSound.Play();
+            GameMusic.SetActive(true);
             MainMenu.SetActive(false);
+            menuInput.gameObject.SetActive(false);
         }
 
     }
