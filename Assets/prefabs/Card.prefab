@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 224932929992368226}
   - component: {fileID: 222596290517922268}
   - component: {fileID: 114809368134654744}
+  - component: {fileID: 111703758835702872}
   m_Layer: 5
   m_Name: TimerDark
   m_TagString: Untagged
@@ -246,6 +247,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &111703758835702872
+Animation:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1920241386495982}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: ba5357603c14d894384b6e08b2bf7067, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114004880888438184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -260,6 +275,7 @@ MonoBehaviour:
   isActive: 0
   isAvailable: 0
   duration: 1
+  anim: {fileID: 0}
   timerclip: {fileID: 7400000, guid: ba5357603c14d894384b6e08b2bf7067, type: 2}
   mask: {fileID: 1920241386495982}
   inventoryElement: {fileID: 224238009088476646, guid: 59c81bc216699e34599c0688b9b0f24c,
@@ -525,7 +541,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224629725167358704}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -543,7 +559,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224629725167358704}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -561,7 +577,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224629725167358704}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -616,10 +632,10 @@ RectTransform:
   m_Children:
   - {fileID: 224495918868263480}
   - {fileID: 224486699715845920}
-  - {fileID: 224932929992368226}
   - {fileID: 224145518644934206}
   - {fileID: 224017338720040472}
   - {fileID: 224135234002886582}
+  - {fileID: 224932929992368226}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -639,10 +655,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224629725167358704}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 128}
+  m_AnchoredPosition: {x: 0, y: 64}
   m_SizeDelta: {x: 96, y: 128}
   m_Pivot: {x: 0, y: 0}

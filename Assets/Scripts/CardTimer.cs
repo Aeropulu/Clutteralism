@@ -8,6 +8,9 @@ public class CardTimer : MonoBehaviour {
     public bool isActive = false;
     public bool isAvailable = false;
     public float duration = 1.0f;
+
+    //public Animation anim;
+
     public AnimationClip timerclip;
     public GameObject mask;
     private float timerstate = 0.0f; // between 0 and 1
@@ -50,8 +53,10 @@ public class CardTimer : MonoBehaviour {
                 isAvailable = true;
             
         }
-        
+
         timerclip.SampleAnimation(mask, timerstate);
+        
+        //anim.clip.SampleAnimation(mask, timerstate);
 
         if (willProduce)
         {
