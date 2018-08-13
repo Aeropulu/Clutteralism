@@ -71,6 +71,7 @@ public class InventoryManager : MonoBehaviour {
 
     private void Win()
     {
+        WinText.transform.SetAsLastSibling();
         WinText.Play("GG");
     }
 
