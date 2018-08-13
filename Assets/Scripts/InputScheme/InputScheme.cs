@@ -4,7 +4,10 @@ using UnityEngine;
 
 
 public abstract class InputScheme : ScriptableObject {
-    public bool up, down, left, right, confirm, cancel, discard;
+
+    public string Name;
+    public GameObject PanelPrefab;
+    public bool up, down, left, right, confirm, cancel;
     public abstract void ProcessInputs();
 	
 }

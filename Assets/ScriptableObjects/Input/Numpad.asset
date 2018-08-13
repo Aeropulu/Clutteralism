@@ -11,11 +11,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e456f3ab80facfb40bd4f5e528fd150c, type: 3}
   m_Name: Numpad
   m_EditorClassIdentifier: Assembly-CSharp::KeyboardScheme
+  Name: NumPad
+  PanelPrefab: {fileID: 1326049480238990, guid: 4d1e75269226e1b4faa475c1f4840888,
+    type: 2}
+  up: 0
+  down: 0
   left: 0
   right: 0
   confirm: 0
   cancel: 0
-  discard: 0
+  UpKey: 264
+  DownKey: 258
   LeftKey: 260
   RightKey: 262
   ConfirmKey: 271

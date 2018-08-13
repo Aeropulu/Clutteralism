@@ -11,11 +11,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e456f3ab80facfb40bd4f5e528fd150c, type: 3}
   m_Name: ArrowKeys
   m_EditorClassIdentifier: Assembly-CSharp::KeyboardScheme
+  Name: Arrow Keys
+  PanelPrefab: {fileID: 1039866552890978, guid: 931eb07af8040da4cae82dd4b5d6126f,
+    type: 2}
+  up: 0
+  down: 0
   left: 0
   right: 0
   confirm: 0
   cancel: 0
-  discard: 0
+  UpKey: 273
+  DownKey: 274
   LeftKey: 276
   RightKey: 275
   ConfirmKey: 32

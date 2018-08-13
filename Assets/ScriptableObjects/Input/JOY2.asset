@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 035146fda563aa642bd29c2c5e768fab, type: 3}
+  m_Name: JOY2
+  m_EditorClassIdentifier: 
+  Name: Gamepad 2
+  PanelPrefab: {fileID: 1470614820833826, guid: 5ab040adebd462f478f0de84a5957d28,
+    type: 2}
+  up: 0
+  down: 0
+  left: 0
+  right: 0
+  confirm: 0
+  cancel: 0
+  HorizontalAxis: Joy2H
+  VerticalAxis: Joy2V
+  ConfirmKey: 370
+  CancelKey: 371
+  Threshold: 0.5

@@ -22,7 +22,7 @@ public class PlayerInput : MonoBehaviour {
         spawn = GetComponent<SpawnCards>();
         current = spots.cardspots;
         MoveCursor();
-        GameState.GameSpeed = 1.0f;
+        //GameState.GameSpeed = 1.0f;
 	}
 	
 	// Update is called once per frame
@@ -57,10 +57,14 @@ public class PlayerInput : MonoBehaviour {
                 PlayCard();
 
         }
-        if (inputScheme.discard)
+        if (inputScheme.cancel)
         {
             if (current == spots.cardspots)
                 Discard();
+            else
+            {
+                DeselectCard();
+            }
         }
     }
 
@@ -68,7 +72,16 @@ public class PlayerInput : MonoBehaviour {
     {
         if (current[whatcard].GetComponent<CardTimer>() == null)
             return;
+
         RectTransform card = current[whatcard];
+        CardTimer timer = card.GetComponent<CardTimer>();
+        if (!timer.isAvailable)
+        {
+
+            timer.GetComponent<Animator>().Play("CardNope", -1, 0.0f);
+
+            return;
+        }
         current[whatcard] = (RectTransform)card.parent;
         card.GetComponent<Animator>().Play("CardAnim");
         Destroy(card.gameObject, 0.5f);
@@ -85,6 +98,15 @@ public class PlayerInput : MonoBehaviour {
             cursor.SetParent(current[whatcard], false);
         
         cursor.SetAsFirstSibling();
+    }
+
+    void DeselectCard()
+    {
+        RectTransform card = spots.cardspots[selectedcard];
+        CardTimer timer = card.GetComponent<CardTimer>();
+        timer.GetComponent<Animator>().Play("CardPlay");
+        current = spots.cardspots;
+        MoveCursor();
     }
 
     void SelectCard()
