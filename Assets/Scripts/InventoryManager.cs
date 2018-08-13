@@ -64,6 +64,7 @@ public class InventoryManager : MonoBehaviour {
         GameState.GameSpeed = 0.0f;
         ClutteredText.transform.SetAsLastSibling();
         ClutteredText.Play("Cluttered");
+        GetComponent<AudioSource>().PlayDelayed(0.25f);
         Opponent.Win();
         playagain.gameObject.SetActive(true);
     }
