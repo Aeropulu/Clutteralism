@@ -14,6 +14,7 @@ public class ControllerInput : InputScheme
     {
         float X = Input.GetAxis(HorizontalAxis);
         float Y = Input.GetAxis(VerticalAxis);
+        Debug.Log(X);
         int IX = 0; int IY = 0;
         if (X < -Threshold)
             IX = -1;
