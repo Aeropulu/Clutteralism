@@ -21,10 +21,13 @@ public class CardTimer : MonoBehaviour {
     private float wait = 0.0f;
     private bool willProduce = false;
 
+    public UnityEngine.UI.Image image;
+
     public AudioSource audioSource;
 	// Use this for initialization
 	void Start () {
-        
+        GetComponent<UnityEngine.UI.Image>().color = type.color;
+        // image.sprite = type.sprite;
 
     }
 	

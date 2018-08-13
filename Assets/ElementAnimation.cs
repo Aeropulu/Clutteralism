@@ -43,8 +43,7 @@ public class ElementAnimation : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (from == null || to == null)
-            return;
+        
         if (!layout.ignoreLayout)
         {
             layout.ignoreLayout = true;

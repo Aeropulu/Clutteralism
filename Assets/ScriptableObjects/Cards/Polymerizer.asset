@@ -18,5 +18,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8e379883940e4284e823ab4f34a03c32, type: 2}
   - {fileID: 11400000, guid: 8e379883940e4284e823ab4f34a03c32, type: 2}
   - {fileID: 11400000, guid: 8e379883940e4284e823ab4f34a03c32, type: 2}
-  - {fileID: 11400000, guid: 8e379883940e4284e823ab4f34a03c32, type: 2}
+  Draw:
+  - {fileID: 11400000, guid: 3cfd4855e70143647b96819e3b7b241d, type: 2}
+  - {fileID: 11400000, guid: 4ec0dc5cf07425341ba466b9807a5d8c, type: 2}
   duration: 3
+  sprite: {fileID: 21300000, guid: 6f8d192c2d16d0b43a95119a1b147a84, type: 3}
+  color: {r: 0.6808473, g: 0.9433962, b: 0.9256087, a: 1}

@@ -14,4 +14,11 @@ MonoBehaviour:
   input: []
   output:
   - {fileID: 11400000, guid: 3016aad03d608ab4586b277cd9dc07fc, type: 2}
+  Draw:
+  - {fileID: 11400000, guid: 4dee5bbff90467145b9fab405ca4be9c, type: 2}
+  - {fileID: 11400000, guid: bb82e53f0cd492a42b46685fc706c13c, type: 2}
+  - {fileID: 11400000, guid: 4dee5bbff90467145b9fab405ca4be9c, type: 2}
+  - {fileID: 11400000, guid: dfb49fbf07818be4b90aedb9b3600b03, type: 2}
   duration: 2.5
+  sprite: {fileID: 21300000, guid: 9ff64abe88f98154e9be33f26fe2b51c, type: 3}
+  color: {r: 0.5471698, g: 0.4921938, b: 0.43618724, a: 1}

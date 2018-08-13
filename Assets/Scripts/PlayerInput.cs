@@ -11,7 +11,7 @@ public class PlayerInput : MonoBehaviour {
     private int selectedcard = 0;
     private PlaySpots spots = null;
     private SpawnCards spawn = null;
-
+    public SpawnCards Opponent;
     public InputScheme inputScheme;
    
 
@@ -56,6 +56,24 @@ public class PlayerInput : MonoBehaviour {
                 PlayCard();
 
         }
+        if (inputScheme.discard)
+        {
+            if (current == spots.cardspots)
+                Discard();
+        }
+    }
+
+    void Discard()
+    {
+        if (current[whatcard].GetComponent<CardTimer>() == null)
+            return;
+        RectTransform card = current[whatcard];
+        current[whatcard] = (RectTransform)card.parent;
+        card.GetComponent<Animator>().Play("CardAnim");
+        Destroy(card.gameObject, 0.5f);
+        spawn.SpawnCard(whatcard);
+        card.SetAsLastSibling();
+
     }
 
     void MoveCursor()
@@ -70,6 +88,7 @@ public class PlayerInput : MonoBehaviour {
 
     void SelectCard()
     {
+        
         CardTimer timer = current[whatcard].GetComponent<CardTimer>();
         
         if (current[whatcard].GetComponent<CardTimer>() == null)
@@ -83,6 +102,8 @@ public class PlayerInput : MonoBehaviour {
 
     void PlayCard()
     {
+        
+
         RectTransform card = spots.cardspots[selectedcard];
         CardTimer timer = card.GetComponent<CardTimer>();
         
@@ -93,7 +114,9 @@ public class PlayerInput : MonoBehaviour {
             MoveCursor();
             Destroy(oldcard.gameObject);
         }
-        
+
+        Opponent.AddCardToDeck(timer.type);
+
         spots.cardspots[selectedcard] = (RectTransform) card.parent;
         card.SetParent(current[whatcard], false);
         current[whatcard] = card;

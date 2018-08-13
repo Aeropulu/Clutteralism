@@ -16,4 +16,8 @@ MonoBehaviour:
   output:
   - {fileID: 11400000, guid: 4dc51e5542f593f41af54b57e26b4df9, type: 2}
   - {fileID: 11400000, guid: 4dc51e5542f593f41af54b57e26b4df9, type: 2}
+  Draw:
+  - {fileID: 11400000, guid: 10e12d0412af58249bbcf8216f8d90e1, type: 2}
   duration: 1
+  sprite: {fileID: 21300000, guid: ffd25cf1f1cd0d94bb1dad89e93c7940, type: 3}
+  color: {r: 0.754717, g: 0.5543145, b: 0.4022784, a: 1}
