@@ -15,6 +15,8 @@ public class InventoryManager : MonoBehaviour {
     public Animator ClutteredText;
     public Animator WinText;
     public InventoryManager Opponent;
+
+    public PressConfirm playagain;
 	// Use this for initialization
 	void Start () {
         
@@ -63,6 +65,7 @@ public class InventoryManager : MonoBehaviour {
         ClutteredText.transform.SetAsLastSibling();
         ClutteredText.Play("Cluttered");
         Opponent.Win();
+        playagain.gameObject.SetActive(true);
     }
 
     private void Win()

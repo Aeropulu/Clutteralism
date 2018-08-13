@@ -6,11 +6,12 @@ public class SpawnCards : MonoBehaviour {
 
     //public SpawnCards Opponent;
     public RectTransform CardPrefab;
+    public AudioClip DefaultSound;
     public InventoryManager SourceInventory;
     public InventoryManager DestinationInventory;
     public CardType[] DefaultCard;
-    public CardType[] cardTypes;
-    public List<CardType> availableCards;
+    //public CardType[] cardTypes;
+    //public List<CardType> availableCards;
     public List<CardType> Deck;
     
     private PlaySpots spots;
@@ -18,7 +19,7 @@ public class SpawnCards : MonoBehaviour {
 	void Start () {
         SourceInventory.Init();
         spots = GetComponent<PlaySpots>();
-        availableCards = new List<CardType>(cardTypes.Length);
+        //availableCards = new List<CardType>(cardTypes.Length);
         //UpdateCardList();
         for (int i = 0; i < spots.cardspots.Length; i++)
         {
@@ -27,7 +28,7 @@ public class SpawnCards : MonoBehaviour {
         }
         
 	}
-	
+	/*
 	private void UpdateCardList()
     {
         for (int i = 0; i < cardTypes.Length; i++)
@@ -45,7 +46,7 @@ public class SpawnCards : MonoBehaviour {
                     availableCards.Add(cardTypes[i]);
             }
         }
-    }
+    }*/
 
     public void SpawnCard(int i)
     {
@@ -56,6 +57,8 @@ public class SpawnCards : MonoBehaviour {
 
         RectTransform t = spots.cardspots[i];
         var c = Instantiate(CardPrefab);
+        
+
         CardTimer timer = c.GetComponent<CardTimer>();
         timer.SourceInventory = SourceInventory;
         timer.DestinationInventory = DestinationInventory;
@@ -65,6 +68,13 @@ public class SpawnCards : MonoBehaviour {
         }
         int index = Random.Range(0, Deck.Count);
         CardType type = Deck[index];
+
+        AudioSource source = c.GetComponent<AudioSource>();
+        if (type.PlaySound)
+            source.clip = type.PlaySound;
+        else
+            source.clip = DefaultSound;
+
         Deck.RemoveAt(index);
         // add one random card from the list
         //AddCardToOpponentDeck(type);

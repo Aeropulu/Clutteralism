@@ -363,7 +363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1834044658059074
 GameObject:
   m_ObjectHideFlags: 1
@@ -982,6 +982,7 @@ MonoBehaviour:
   ClutteredText: {fileID: 95963349695133000}
   WinText: {fileID: 95744342057662006}
   Opponent: {fileID: 0}
+  playagain: {fileID: 0}
 --- !u!114 &114765115739219132
 MonoBehaviour:
   m_ObjectHideFlags: 1

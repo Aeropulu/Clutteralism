@@ -11,6 +11,7 @@ public class StartGame : MonoBehaviour {
     public PlayerInput LeftInput, Rightinput;
     public InputSchemeSelector LeftSelector, RightSelector;
     public GameObject MainMenu;
+    public MenuInputManager menuInput;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +29,7 @@ public class StartGame : MonoBehaviour {
             Rightinput.gameObject.SetActive(true);
             GameState.GameSpeed = 1.0f;
             MainMenu.SetActive(false);
+            menuInput.gameObject.SetActive(false);
         }
 
     }

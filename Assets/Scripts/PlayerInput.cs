@@ -18,6 +18,7 @@ public class PlayerInput : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        cursor.gameObject.SetActive(true);
         spots = GetComponent<PlaySpots>();
         spawn = GetComponent<SpawnCards>();
         current = spots.cardspots;
