@@ -9,15 +9,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 924220778f59ff343856513520e022e4, type: 3}
-  m_Name: Lumberjack
+  m_Name: B_Lumberjack
   m_EditorClassIdentifier: 
   input:
   - {fileID: 11400000, guid: b69907b637344fe488c54f55e5430c5c, type: 2}
   output:
   - {fileID: 11400000, guid: de7ba5e02d8fd20488345c82be87ca68, type: 2}
-  - {fileID: 11400000, guid: de7ba5e02d8fd20488345c82be87ca68, type: 2}
+  - {fileID: 11400000, guid: 86a60ed6e84aeda4d8a9077b6db5817d, type: 2}
   Draw:
   - {fileID: 11400000, guid: 706100bd0368507408ab4a704b6b630d, type: 2}
-  duration: 1
-  sprite: {fileID: 21300000, guid: 8bc4f644b364bfe4a970a704c1e57e37, type: 3}
-  color: {r: 0.7075472, g: 0.605063, b: 0.45056072, a: 1}
+  - {fileID: 11400000, guid: e4dd3c51a2db6e24db159f70b75fdf7e, type: 2}
+  PlaySound: {fileID: 0}
+  duration: 1.6
+  sprite: {fileID: 21300000, guid: 96edf0c13e548db488ca2964d22da085, type: 3}
+  color: {r: 0.8274628, g: 0.8584906, b: 0.6033731, a: 1}

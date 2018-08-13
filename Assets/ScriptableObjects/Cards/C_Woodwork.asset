@@ -9,15 +9,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 924220778f59ff343856513520e022e4, type: 3}
-  m_Name: Woodwork
+  m_Name: C_Woodwork
   m_EditorClassIdentifier: 
   input:
   - {fileID: 11400000, guid: de7ba5e02d8fd20488345c82be87ca68, type: 2}
   output:
   - {fileID: 11400000, guid: 4dc51e5542f593f41af54b57e26b4df9, type: 2}
   - {fileID: 11400000, guid: 4dc51e5542f593f41af54b57e26b4df9, type: 2}
+  - {fileID: 11400000, guid: 4dc51e5542f593f41af54b57e26b4df9, type: 2}
   Draw:
   - {fileID: 11400000, guid: 10e12d0412af58249bbcf8216f8d90e1, type: 2}
-  duration: 1
-  sprite: {fileID: 21300000, guid: ffd25cf1f1cd0d94bb1dad89e93c7940, type: 3}
-  color: {r: 0.754717, g: 0.5543145, b: 0.4022784, a: 1}
+  - {fileID: 11400000, guid: 10e12d0412af58249bbcf8216f8d90e1, type: 2}
+  - {fileID: 11400000, guid: 10e12d0412af58249bbcf8216f8d90e1, type: 2}
+  - {fileID: 11400000, guid: fdfc7b59e87e7c148b7e5e57b5f957d7, type: 2}
+  - {fileID: 11400000, guid: fdfc7b59e87e7c148b7e5e57b5f957d7, type: 2}
+  PlaySound: {fileID: 0}
+  duration: 2.9
+  sprite: {fileID: 21300000, guid: 5a5f8109caf52e84c8b97e3a9dc52d9d, type: 3}
+  color: {r: 0.754717, g: 0.6792373, b: 0.6229975, a: 1}

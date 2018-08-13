@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 924220778f59ff343856513520e022e4, type: 3}
-  m_Name: Polymerizer
+  m_Name: Z_Polymerizer
   m_EditorClassIdentifier: 
   input:
   - {fileID: 11400000, guid: 3016aad03d608ab4586b277cd9dc07fc, type: 2}
@@ -21,6 +21,7 @@ MonoBehaviour:
   Draw:
   - {fileID: 11400000, guid: 3cfd4855e70143647b96819e3b7b241d, type: 2}
   - {fileID: 11400000, guid: 4ec0dc5cf07425341ba466b9807a5d8c, type: 2}
+  PlaySound: {fileID: 0}
   duration: 3
   sprite: {fileID: 21300000, guid: 6f8d192c2d16d0b43a95119a1b147a84, type: 3}
   color: {r: 0.6808473, g: 0.9433962, b: 0.9256087, a: 1}

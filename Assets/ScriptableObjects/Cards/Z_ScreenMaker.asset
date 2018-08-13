@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 924220778f59ff343856513520e022e4, type: 3}
-  m_Name: Screen Maker
+  m_Name: Z_ScreenMaker
   m_EditorClassIdentifier: 
   input:
   - {fileID: 11400000, guid: d28824121a3aee2428fa195ef5f9d7c2, type: 2}
@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: aa4cd4f4b2a2b724e9a98495002c644d, type: 2}
   Draw:
   - {fileID: 11400000, guid: cb136fb9d0a269d42a29f63578713b80, type: 2}
+  PlaySound: {fileID: 0}
   duration: 1
   sprite: {fileID: 21300000, guid: 62f3814a81a1f84489963b2c7b08c7ba, type: 3}
   color: {r: 0.7709594, g: 0.990566, b: 0.9842449, a: 1}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924220778f59ff343856513520e022e4, type: 3}
+  m_Name: C_GlassWorker
+  m_EditorClassIdentifier: 
+  input:
+  - {fileID: 11400000, guid: 6e7ecbe765a23454294b23ad62685667, type: 2}
+  output:
+  - {fileID: 11400000, guid: d28824121a3aee2428fa195ef5f9d7c2, type: 2}
+  - {fileID: 11400000, guid: d28824121a3aee2428fa195ef5f9d7c2, type: 2}
+  - {fileID: 11400000, guid: d28824121a3aee2428fa195ef5f9d7c2, type: 2}
+  Draw:
+  - {fileID: 11400000, guid: 91cf4003b52168f41b83b454fa8d555d, type: 2}
+  - {fileID: 11400000, guid: 91cf4003b52168f41b83b454fa8d555d, type: 2}
+  - {fileID: 11400000, guid: 91cf4003b52168f41b83b454fa8d555d, type: 2}
+  - {fileID: 11400000, guid: 7d2897272cbf5f442a39dcaf283d439f, type: 2}
+  - {fileID: 11400000, guid: 7d2897272cbf5f442a39dcaf283d439f, type: 2}
+  PlaySound: {fileID: 0}
+  duration: 3
+  sprite: {fileID: 21300000, guid: 18b9e1dabf0a6e644b38e360fb52e627, type: 3}
+  color: {r: 0.70692414, g: 0.8867924, b: 0.8318227, a: 1}

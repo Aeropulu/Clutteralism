@@ -9,14 +9,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 924220778f59ff343856513520e022e4, type: 3}
-  m_Name: Car Factory
+  m_Name: D_CarFactory
   m_EditorClassIdentifier: 
   input:
   - {fileID: 11400000, guid: 1b92f2af0bc938248a5542cfbab1d285, type: 2}
+  - {fileID: 11400000, guid: d28824121a3aee2428fa195ef5f9d7c2, type: 2}
   output:
   - {fileID: 11400000, guid: c3d2406da07229b4bb09be75d010449c, type: 2}
+  - {fileID: 11400000, guid: c3d2406da07229b4bb09be75d010449c, type: 2}
+  - {fileID: 11400000, guid: 25ecc9fdbd57b714991fa99f49039dbf, type: 2}
   Draw:
   - {fileID: 11400000, guid: 0d152d81920e46245bc47a7f43f0ecf3, type: 2}
+  - {fileID: 11400000, guid: 0d152d81920e46245bc47a7f43f0ecf3, type: 2}
+  - {fileID: 11400000, guid: 0d152d81920e46245bc47a7f43f0ecf3, type: 2}
+  - {fileID: 11400000, guid: 10e12d0412af58249bbcf8216f8d90e1, type: 2}
+  - {fileID: 11400000, guid: 10e12d0412af58249bbcf8216f8d90e1, type: 2}
+  PlaySound: {fileID: 0}
   duration: 2
-  sprite: {fileID: 21300000, guid: 62f3814a81a1f84489963b2c7b08c7ba, type: 3}
+  sprite: {fileID: 21300000, guid: 7f474650f8a600d409853204f8c2d1c1, type: 3}
   color: {r: 0.9877821, g: 1, b: 0.6933962, a: 1}

@@ -9,17 +9,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 924220778f59ff343856513520e022e4, type: 3}
-  m_Name: Foundry
+  m_Name: B_Foundry
   m_EditorClassIdentifier: 
   input:
   - {fileID: 11400000, guid: 3016aad03d608ab4586b277cd9dc07fc, type: 2}
   output:
   - {fileID: 11400000, guid: e8bfad9868a3c1043a0f19d52e038a52, type: 2}
-  - {fileID: 11400000, guid: e8bfad9868a3c1043a0f19d52e038a52, type: 2}
+  - {fileID: 11400000, guid: 6e7ecbe765a23454294b23ad62685667, type: 2}
   Draw:
   - {fileID: 11400000, guid: 7c9778feaae11c045971d1aa4fd0696a, type: 2}
-  - {fileID: 11400000, guid: 7d2897272cbf5f442a39dcaf283d439f, type: 2}
   - {fileID: 11400000, guid: 7c9778feaae11c045971d1aa4fd0696a, type: 2}
-  duration: 1
-  sprite: {fileID: 21300000, guid: 6f8d192c2d16d0b43a95119a1b147a84, type: 3}
-  color: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
+  - {fileID: 11400000, guid: bb82e53f0cd492a42b46685fc706c13c, type: 2}
+  - {fileID: 11400000, guid: bb82e53f0cd492a42b46685fc706c13c, type: 2}
+  PlaySound: {fileID: 0}
+  duration: 2
+  sprite: {fileID: 21300000, guid: 217c710a49a295345a6319c07c8c5f3d, type: 3}
+  color: {r: 0.85882354, g: 0.7856137, b: 0.70980394, a: 1}

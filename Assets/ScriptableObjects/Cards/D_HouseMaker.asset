@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924220778f59ff343856513520e022e4, type: 3}
+  m_Name: D_HouseMaker
+  m_EditorClassIdentifier: 
+  input:
+  - {fileID: 11400000, guid: 4dc51e5542f593f41af54b57e26b4df9, type: 2}
+  - {fileID: 11400000, guid: 86a60ed6e84aeda4d8a9077b6db5817d, type: 2}
+  output:
+  - {fileID: 11400000, guid: 6a7df4dfd2e18174e9c873d7553c2d61, type: 2}
+  - {fileID: 11400000, guid: 6a7df4dfd2e18174e9c873d7553c2d61, type: 2}
+  - {fileID: 11400000, guid: 6a7df4dfd2e18174e9c873d7553c2d61, type: 2}
+  - {fileID: 11400000, guid: 6e7ecbe765a23454294b23ad62685667, type: 2}
+  Draw:
+  - {fileID: 11400000, guid: 0d152d81920e46245bc47a7f43f0ecf3, type: 2}
+  - {fileID: 11400000, guid: bb82e53f0cd492a42b46685fc706c13c, type: 2}
+  - {fileID: 11400000, guid: bb82e53f0cd492a42b46685fc706c13c, type: 2}
+  - {fileID: 11400000, guid: bb82e53f0cd492a42b46685fc706c13c, type: 2}
+  - {fileID: 11400000, guid: bb82e53f0cd492a42b46685fc706c13c, type: 2}
+  PlaySound: {fileID: 0}
+  duration: 3.5
+  sprite: {fileID: 21300000, guid: a17c25088e9e5a542be8b68d49532303, type: 3}
+  color: {r: 1, g: 0.7693997, b: 0.4575472, a: 1}

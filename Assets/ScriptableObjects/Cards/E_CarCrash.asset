@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924220778f59ff343856513520e022e4, type: 3}
+  m_Name: E_CarCrash
+  m_EditorClassIdentifier: 
+  input:
+  - {fileID: 11400000, guid: c3d2406da07229b4bb09be75d010449c, type: 2}
+  - {fileID: 11400000, guid: 6a7df4dfd2e18174e9c873d7553c2d61, type: 2}
+  output:
+  - {fileID: 11400000, guid: 86a60ed6e84aeda4d8a9077b6db5817d, type: 2}
+  - {fileID: 11400000, guid: de7ba5e02d8fd20488345c82be87ca68, type: 2}
+  - {fileID: 11400000, guid: 1b92f2af0bc938248a5542cfbab1d285, type: 2}
+  - {fileID: 11400000, guid: 656b975ccf541a147a0c3ec37f518ae4, type: 2}
+  - {fileID: 11400000, guid: 656b975ccf541a147a0c3ec37f518ae4, type: 2}
+  Draw:
+  - {fileID: 11400000}
+  PlaySound: {fileID: 0}
+  duration: 3.3
+  sprite: {fileID: 21300000, guid: 3fd42b560e8333f489ff4544fb5a6d26, type: 3}
+  color: {r: 1, g: 0.7391758, b: 0.514151, a: 1}

@@ -9,14 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 924220778f59ff343856513520e022e4, type: 3}
-  m_Name: Forest
+  m_Name: A_Forest
   m_EditorClassIdentifier: 
   input: []
   output:
   - {fileID: 11400000, guid: b69907b637344fe488c54f55e5430c5c, type: 2}
+  - {fileID: 11400000, guid: b69907b637344fe488c54f55e5430c5c, type: 2}
   Draw:
   - {fileID: 11400000, guid: 1b5d8e5bdfd38cb4ab4e98ed26007a22, type: 2}
-  - {fileID: 11400000, guid: dfb49fbf07818be4b90aedb9b3600b03, type: 2}
-  duration: 5
-  sprite: {fileID: 21300000, guid: 7fa0f81af1ef020479edd929a3012db4, type: 3}
-  color: {r: 0.46174258, g: 0.8679245, b: 0.41349235, a: 1}
+  PlaySound: {fileID: 0}
+  duration: 5.5
+  sprite: {fileID: 21300000, guid: 5202c7a9b1d653243b47a0ae3aaf5be5, type: 3}
+  color: {r: 0.7781419, g: 0.8773585, b: 0.76561946, a: 1}
