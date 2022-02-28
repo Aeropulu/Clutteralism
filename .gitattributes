@@ -1,5 +1,7 @@
 * text=auto
 
+*.shader linguist-detectable=false
+
 # Unity files
 *.meta -text -merge=unityamlmerge
 *.unity -text -merge=unityamlmerge
